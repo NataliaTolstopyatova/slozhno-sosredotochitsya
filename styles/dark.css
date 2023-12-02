@@ -8,4 +8,23 @@
   --title-accent-color: #FF0070;
   --title-color: #000028;
   --color-shadow: #FF0070;
+  --color-button: rgba(255, 0, 112, 0.40);
+}
+
+.theme_dark .circle::before {
+  visibility: visible;
+} 
+
+.theme_dark .circle::after {
+  visibility: visible;
+}
+
+@media (prefers-color-scheme: dark) {
+  .circle::before {
+    visibility: visible;
+  } 
+  
+  .circle::after {
+    visibility: visible;
+  }
 }
