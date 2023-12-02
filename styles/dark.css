@@ -15,11 +15,12 @@
 
 .theme_dark .circle::before {
   content: 'REC';
+  position: absolute;
+  z-index: -1;
   visibility: visible;
   display: inline-block;
   right: 39px;
   top: 10px;
-  position: absolute;
   color: #FF0070;
   font-size: 18px;
   font-style: normal;
@@ -29,8 +30,9 @@
 
 .theme_dark .circle::after {
   content: '';
-  visibility: visible;
   position: absolute;
+  z-index: -1;
+  visibility: visible;
   top: 17px;
   right: 18px;
   background: #FF0070;
@@ -57,17 +59,29 @@
 }
 
 @media (prefers-color-scheme: dark) {
+  .page {
+    --main-font: 'IBM Plex mono';
+    --bg-color: #000028;
+    --background-image: url(../images/cover-image-dark.png);
+    --bg-accent-color: #FF0070;
+    --text-color: #F1B2CE;
+    --title-accent-color: #FF0070;
+    --title-color: #000028;
+    --color-shadow: #FF0070;
+  }
+
   .heading__title {
     color: #DB00FF;
   } 
 
   .circle::before {
     content: 'REC';
+    position: absolute;
+    z-index: -1;
     visibility: visible;
     display: inline-block;
     right: 39px;
     top: 10px;
-    position: absolute;
     color: #FF0070;
     font-size: 18px;
     font-style: normal;
@@ -77,8 +91,9 @@
   
   .circle::after {
     content: '';
-    visibility: visible;
     position: absolute;
+    z-index: -1;
+    visibility: visible;
     top: 17px;
     right: 18px;
     background: #FF0070;

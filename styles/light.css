@@ -14,12 +14,10 @@
 }
 
 .theme_light .circle::before {
-  content: 'REC';
   display: none;
 } 
 
 .theme_light .circle::after {
-  content: '';
   visibility: hidden;
 }
 
@@ -54,12 +52,10 @@
     }
 
     .circle::before {
-      content: 'REC';
       display: none;
     } 
     
     .circle::after {
-      content: '';
       visibility: hidden;
     }
 
