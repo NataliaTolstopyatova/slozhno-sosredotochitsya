@@ -59,6 +59,17 @@
 }
 
 @media (prefers-color-scheme: dark) {
+  .page.theme_auto {
+    --main-font: 'IBM Plex mono';
+    --bg-color: #000028;
+    --background-image: url(../images/cover-image-dark.png);
+    --bg-accent-color: #FF0070;
+    --text-color: #F1B2CE;
+    --title-accent-color: #FF0070;
+    --title-color: #000028;
+    --color-shadow: #FF0070;
+  }
+
   .heading__title {
     color: #DB00FF;
   } 
