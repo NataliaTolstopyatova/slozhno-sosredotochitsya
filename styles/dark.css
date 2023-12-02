@@ -59,7 +59,7 @@
 }
 
 @media (prefers-color-scheme: dark) {
-  :root {
+  .page.theme_auto {
     --main-font: 'IBM Plex mono';
     --bg-color: #000028;
     --background-image: url(../images/cover-image-dark.png);
